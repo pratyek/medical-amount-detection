@@ -1,0 +1,1 @@
+// Main entry point for the Medical Amount Detection API
