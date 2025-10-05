@@ -12,9 +12,9 @@ const configSchema = z.object({
 
   // Google AI
   GOOGLE_AI_API_KEY: z.string().min(1, 'Google AI API key is required'),
-  GOOGLE_AI_MODEL: z.string().default('gemini-1.5-flash-latest'),
+  GOOGLE_AI_MODEL: z.string().default('gemini-2.5-flash'),
   AI_MAX_RETRIES: z.string().default('3').transform(Number).pipe(z.number().positive()),
-  AI_TIMEOUT_MS: z.string().default('10000').transform(Number).pipe(z.number().positive()),
+  AI_TIMEOUT_MS: z.string().default('30000').transform(Number).pipe(z.number().positive()),
 
   // OCR
   TESSERACT_PATH: z.string().optional(),
